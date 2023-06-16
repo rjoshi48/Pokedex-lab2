@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+
+	<meta charset="UTF-8" />
+	<title>Pokédex</title>
+	<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body> 
+
+	<script src="app.js"></script>
+
+	<h1> Pokédex </h1>
+
+	<div class="poke-continer" id="pokecontainer">
+		<div class="filter-text-search"> 
+
+			<div class="pokemon-search-number">
+				
+					<label>Enter Name</label>			
+					<input data-type="name" type="text" class="pokemon-input-name" id="search-string" onkeyup="validatestring()"> 
+						
+					<label>Enter Number</label>
+					<input data-type="number" type="text" class="pokemon-input-number" id="search-num" onkeyup="validatenum()">
+			
+			</div>
+		</div>
+
+	<ul id="pokedex" class="no-bullets">
+
+		<li>
+			<div class="pokemon">				
+					<div class="img-container">
+						<img class="pokemon1" src="pokemon/1.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#001</span>
+						<h3 class="name">Bulbasaur</h3>
+					</div>
+			</div>
+		</li>
+		
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon2" src="pokemon/2.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#002</span>
+						<h3 class="name">Ivysaur</h3>
+					</div>		
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon3" src="pokemon/3.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#003</span>
+						<h3 class="name">Venusaur</h3>
+					</div>
+			</div>
+		</li>
+		
+
+		<li>
+			<div class="pokemon">				
+					<div class="img-container">
+						<img class="pokemon4" src="pokemon/4.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#004</span>
+						<h3 class="name">Charmander</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon5" src="pokemon/5.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#005</span>
+						<h3 class="name">Charmeleon</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemo6" src="pokemon/6.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#006</span>
+						<h3 class="name">Charizard</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon7" src="pokemon/7.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#007</span>
+						<h3 class="name">Squirtle</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon8" src="pokemon/8.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#008</span>
+						<h3 class="name">Wartortle</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon9" src="pokemon/9.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#009</span>
+						<h3 class="name">Blastoise</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon10" src="pokemon/10.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#010</span>
+						<h3 class="name">Caterpie</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon11" src="pokemon/11.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#011</span>
+						<h3 class="name">Metapod</h3>
+					</div>			
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon12" src="pokemon/12.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#012</span>
+						<h3 class="name">Butterfree</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon13" src="pokemon/13.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#013</span>
+						<h3 class="name">Weedle</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon14" src="pokemon/14.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#014</span>
+						<h3 class="name">Kakuna</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon15" src="pokemon/15.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#015</span>
+						<h3 class="name">Beedrill</h3>
+					</div>
+			</div>
+		</li>
+
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon16" src="pokemon/16.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#016</span>
+						<h3 class="name">Pidgey</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon17" src="pokemon/17.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#017</span>
+						<h3 class="name">Pidgeotto</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon18" src="pokemon/18.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#018</span>
+						<h3 class="name">Pidgeot</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon19" src="pokemon/19.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#019</span>
+						<h3 class="name">Rattata</h3>
+					</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="pokemon">
+					<div class="img-container">
+						<img class="pokemon20" src="pokemon/20.png" alt="Pokemon Images"/>
+					</div>
+					<div class="info">
+						<span class="number">#020</span>
+						<h3 class="name">Raticate</h3>
+					</div>
+			</div>
+		</li>
+		
+
+		</ul>
+
+	</div>
+
+
+
+
+</body>
+
+
+</html>
